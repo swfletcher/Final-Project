@@ -1,0 +1,166 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*Universal*/
+
+html {
+	font-family: 'Brygada 1918', serif;
+	padding: 0px 5px 0px 5px;
+}
+
+h1 {
+	background: #2d3945;
+	color: white;
+	padding-top: 1.5rem;
+	padding-bottom: 1.5rem;
+	text-align: center;
+	font-size: 1.25rem;
+}
+
+h2 {
+	text-align: center;
+	font-weight: 700;
+}
+
+p, #othertopics, label { 
+	color: #6e7d8d;
+}
+
+h2 + p {
+	
+	text-align: center;
+	border-bottom: 4px solid black; 
+	padding-bottom: 1.75rem;
+	margin-bottom: 2px;
+}
+
+#contactfield {
+	border-bottom: 2px solid black; 
+	padding-bottom: 1.75rem;
+}
+
+fieldset {
+	border: 0px;
+}
+
+legend {
+	padding-top: 3rem;
+	font-size: 1.2rem;
+}
+
+.intro {
+	
+	border-bottom: 2px solid black;
+}
+
+.copyright {
+	text-align: center;
+}
+
+
+[type="text"], [type="tel"], [type="email"], #stateselect, option, textarea {
+    border: 0px;
+	background-color: #eff0f1;
+	padding: 10px 20px 10px 10px;
+	text-align: right;
+	width: 100%;
+	box-sizing:border-box;
+	margin-bottom: 15px;
+	margin-top: 15px;
+	border-radius: 2.5px;
+}
+
+textarea {
+	padding-top: 30px;
+	text-align: left;
+}
+
+select {
+	color: gray;
+}
+
+
+#othertopics {
+	margin-bottom: 1px;
+	margin-top: 16px;
+	display: block;
+}
+
+button {
+	background-color:#4ebbb5;
+	width: 100%;
+	padding: 1em 0;
+	border: none;
+	border-radius: 5px;
+	color: white;
+}
+
+[type="checkbox"], [type="radio"] {
+	
+	margin-bottom: 16px;
+	margin-right: 10px;
+}
+
+
+[type=text]:focus, [type=tel]:focus, #stateselect:focus, #topic:focus, button:focus, #email:focus {
+    outline: none !important;
+    border:1px solid #029bd2;
+}
+
+[type=checkbox]:focus, [type=radio]:focus {
+	outline-color: #029bd2 !important;
+}
+
+
+
+.flex {
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		overflow: auto;
+		align-content: center;
+	}
+
+#zip {
+	width: 150px;
+}
+
+#contactinfo {
+	padding-bottom: 30px;
+	padding-top: 30px;
+	
+}
+
+@media only screen and (min-width: 768px) {
+  form, .intro {
+   	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+}
+	
+
+  .flexinput, [type="tel"], [type="email"], #stateselect, option, zip {
+	width: 65%;
+	box-sizing: border-box;
+	margin-bottom: 15px;
+	margin-top: 15px;
+	border-radius: 2.5px;
+	float: right;
+  }
+
+	.flexlabel {
+		display: inline-block;
+		margin-top:25px;
+	}
+	
+	#zip {
+	margin: 0px;
+}
+	
+	
+	
+	
+	
+}
+
+

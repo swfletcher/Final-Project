@@ -1,0 +1,95 @@
+@charset "UTF-8";
+/* CSS Document */
+
+html{
+	background-color: 153, 153, 153;
+}
+
+body {
+	position: relative;
+	font-family: 'Open Sans', sans-serif;
+	padding: 0px 5%;
+	margin-bottom: 5%;
+	background-color: 153, 153, 153;
+}
+
+h1 {
+	margin-top: 5%;
+	margin-bottom: 2%;
+	font-size: 20px;
+}
+
+p {
+	color: grey;
+	font-size: 12px;
+}
+
+.avatar{
+	border-radius: 50%;
+}
+
+.overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(153, 153, 153, 0.5);
+	height: 100vh;
+	margin-top: -50px;
+}
+
+.modal {
+	width: 375px;
+	margin: 10% auto 15% auto;
+	positon: relative;
+	text-align: center;
+	background: #faf9f6;
+	border: 1px solid grey;Í
+	border-radius: 5px;
+	padding: 30px 20px;
+}
+
+.modal-close {
+	postion: absolute;
+	right: 15px;
+	top: 5px;
+	cursor: pointer;
+	margin-left: 350px;
+}
+
+
+
+
+.hidden {
+	display: none;
+}
+
+
+/*Added*/
+
+
+
+.grid-container{
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
+    grid-template-rows: auto 1fr auto;
+    grid-gap: 30px;
+}
+
+
+.card{
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    border: 1px solid grey;
+    padding: 15px;
+	background-color: white;
+	transition-duration: .5s;
+}
+
+
+.card:hover {
+   transform: scale(1.05);
+	border-color: darkgreen;
+}

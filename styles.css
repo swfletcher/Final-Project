@@ -1,0 +1,763 @@
+@charset "UTF-8";
+/* CSS Document */
+html {
+  font-family: 'Roboto', sans-serif;
+  height: 100%;
+}
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.container, .container-fluid, .nav {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+footer {
+  margin-top: 30px;
+}
+hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: deepskyblue;
+  opacity: 1;
+}
+h4 {
+  margin-top: 15px;
+  font-style: italic;
+  font-size: 1.1em
+}
+.h3-margin {
+  margin-top: 20px;
+}
+.hidden {
+  display: none;
+}
+p {
+  font-size: 20px;
+}
+li {
+  font-size: 18px;
+}
+#intro-header {
+  font-size: 2rem;
+}
+/*Creatives Page*/
+.hide-creative {
+  display: none;
+}
+#form {
+  max-width: 65%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
+  margin-bottom: auto;
+}
+.passwordForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
+  gap: 10px;
+  border: solid medium darkgrey;
+  border-radius: 10px;
+  padding: 25px;
+  align-items: center;
+}
+#tryAgain {
+  color: red;
+  margin-top: 20px;
+}
+::-webkit-input-placeholder {
+  text-align: center;
+}
+:-moz-placeholder { /* Firefox 18- */
+  text-align: center;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  text-align: center;
+}
+:-ms-input-placeholder {
+  text-align: center;
+}
+.passwordForm input {
+  width: 150px;
+  padding: 10px;
+  border-radius: 5px;
+}
+.passwordContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+@keyframes border-pulsate {
+  0% {
+    border-color: rgba(30, 144, 255, 1);
+  }
+  50% {
+    border-color: rgba(30, 144, 255, 0.3);
+  }
+  100% {
+    border-color: rgba(30, 144, 255, 1);
+  }
+}
+#password {
+  border: 2px solid;
+  animation: border-pulsate 2s infinite;
+}
+/*Navigation Styles*/
+#navbarNav {
+  flex-direction: row;
+  justify-content: flex-end;
+}
+nav {
+  border-bottom: solid medium darkgrey;
+}
+.navbar-light .navbar-nav .nav-link {
+  color: dodgerblue;
+}
+.navbar-dark .navbar-toggler {
+  border-color: white;
+}
+.navbar-toggler-icon {}
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show > .nav-link {
+  color: royalblue;
+}
+.swf-icon {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+footer nav {
+  border: none;
+}
+footer {
+  border-top: solid medium darkgrey;
+  padding: 15px;
+  background-color: lightgray;
+  margin-top: 0px;
+}
+/*Jump Buttons*/
+.btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  margin: auto;
+  margin-top: 50px;
+}
+.jump-button {
+  font-size: 2vw;
+}
+/*Content Images*/
+.content-image-wide {
+  width: 100%;
+  margin: auto;
+}
+.content-image {
+  width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 15px;
+  border: solid 3px lightgrey;
+  border-radius: 10px;
+}
+.content-image-small {
+  width: 40%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 15px;
+  border: solid 3px lightgrey;
+  border-radius: 10px;
+  padding: 15px;
+}
+.content-image-medium {
+  width: 70%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 15px;
+  border: solid 3px lightgrey;
+  border-radius: 10px;
+  padding: 15px;
+}
+/*Toggle for Dark Mode*/
+.switch {
+  position: relative;
+  display: none; /*Changes to none from inline-block*/
+  width: 60px;
+  height: 34px;
+}
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+input:checked + .slider {
+  background-color: #2196F3;
+}
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+.slider.round:before {
+  border-radius: 50%;
+}
+/*Home Page*/
+.home-background {
+  background-image: linear-gradient(to left, transparent, dimgrey), url('images/Profile-e1565738842194 copy.jpg');
+  background-size: cover;
+  height: 100%;
+  color: white;
+}
+.block-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: dodgerblue;
+}
+.block-wrapper div {
+  height: 25vw;
+  width: 25vw;
+  margin: 0px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.block-wrapper div h2 {
+  margin-top: auto;
+  margin-bottom: auto;
+  font-size: 3vw;
+  text-align: center;
+}
+.block-wrapper a {
+  text-decoration: none;
+}
+#digital-block {
+  background: linear-gradient(rgba(30, 144, 255, 0.75), rgba(30, 144, 255, 0.90)), url("images/social-media-card.jpg");
+  background-size: cover;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#creative-block {
+  background: linear-gradient(rgba(0, 191, 255, 0.85), rgba(0, 191, 255, 0.90)), url("images/creative.jpg");
+  background-size: cover;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#webdev-block {
+  background: linear-gradient(rgba(30, 144, 255, 0.75), rgba(30, 144, 255, 0.90)), url("images/webdev.jpg");
+  background-size: cover;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#about-block {
+  background: linear-gradient(rgba(0, 191, 255, 0.85), rgba(0, 191, 255, 0.90)), url("images/Profile-e1565738842194.jpg");
+  background-size: cover;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.signature {
+  text-align: center;
+}
+.home-background {
+  color: white;
+}
+/*Jumbo Backgrounds for Pages*/
+.digital-background {
+  background: linear-gradient(rgba(105, 105, 105, 0.9), rgba(105, 105, 105, 0.90)), url("images/background-digital.jpg");
+  background-size: cover;
+  color: white;
+}
+.about-background {
+  background: linear-gradient(rgba(105, 105, 105, 0.9), rgba(105, 105, 105, 0.90)), url("images/background-about.jpg");
+  background-size: cover;
+  color: white;
+}
+.webdev-background {
+  background: linear-gradient(rgba(105, 105, 105, 0.9), rgba(105, 105, 105, 0.90)), url("images/background-webdev.jpg");
+  background-size: cover;
+  color: white;
+}
+.creative-background {
+  background: linear-gradient(rgba(105, 105, 105, 0.9), rgba(105, 105, 105, 0.90)), url("images/background-creative.jpg");
+  background-size: cover;
+  color: white;
+}
+.email-background {
+  background: linear-gradient(rgba(105, 105, 105, 0.9), rgba(105, 105, 105, 0.90)), url("images/email-card.jpg");
+  background-size: cover;
+  color: white;
+}
+.google-ads-background {
+  background: linear-gradient(rgba(105, 105, 105, 0.9), rgba(105, 105, 105, 0.90)), url("images/Google-Ads-card.jpg");
+  background-size: cover;
+  color: white;
+}
+.leadgen-background {
+  background: linear-gradient(rgba(105, 105, 105, 0.9), rgba(105, 105, 105, 0.90)), url("images/lead-generation-card.jpg");
+  background-size: cover;
+  color: white;
+}
+.seo-background {
+  background: linear-gradient(rgba(105, 105, 105, 0.9), rgba(105, 105, 105, 0.90)), url("images/seo-card.jpg");
+  background-size: cover;
+  color: white;
+}
+.social-background {
+  background: linear-gradient(rgba(105, 105, 105, 0.9), rgba(105, 105, 105, 0.90)), url("images/social-media-card.jpg");
+  background-size: cover;
+  color: white;
+}
+.linkedin-ads-background {
+  background: linear-gradient(rgba(105, 105, 105, 0.9), rgba(105, 105, 105, 0.90)), url("images/linkedin-card.jpg");
+  background-size: cover;
+  color: white;
+}
+/*For Genral Content*/
+.long-content {
+  padding: 20px 50px 20px 50px;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.introduction {
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 5%;
+}
+.list {
+  margin-left: 20px;
+}
+.btn-color {
+  background-color: deepskyblue;
+}
+/*JumboTron*/
+.jumbotron {
+  margin-bottom: 0px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.jumbotron h1 {
+  margin-top: 0px;
+  font-weight: 600;
+}
+.lead {
+  padding: 0px;
+}
+.lead-p {
+  margin-bottom: 0px;
+  padding: 25px;
+}
+.jumbo-text {
+  margin: 15px;
+}
+.jumbo-h2 {
+  font-size: 2rem;
+  margin-bottom: 25px;
+}
+/*Card Holder*/
+.alluminate-topper {
+  max-width: 50%;
+}
+.card-holder {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+}
+.card {
+  margin-top: 20px;
+  flex-basis: 30%;
+}
+.card:hover {
+  outline-style: solid;
+  outline-color: dodgerblue;
+}
+.nohover:hover {
+  outline-style: none;
+  outline-color: none;
+}
+.card img {
+  border-bottom: solid 2px lightgrey;
+}
+.creative-card {
+  border-radius: 10px;
+  padding: 0px;
+  margin: 50px 0px;
+  border: solid 2px lightgrey;
+}
+.card-footer {
+  padding: 0px;
+  border-bottom: 8px;
+  boder: 1px solid rgba(0, 0, 0, .125);
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  background-color: transparent;
+}
+.card-body {
+  background-color: #DBDBDB;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  text-align: left;
+}
+.card-btn {
+  margin-top: 15px;
+}
+.card-body .btn-primary {
+  margin-top: 0px;
+}
+.accordion-button {
+  background-color: dodgerblue;
+  color: #ffffff8C;
+  font-size: 20px;
+}
+.accordion-flush .accordion-item {
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+.accordion-button:after {
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff8C'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
+}
+.accordion-item:last-of-type .accordion-button.collapsed {
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+/*Targets Components of Custom Card Topper*/
+.card-topper {
+  background-color: dodgerblue;
+  color: white;
+  padding: 24px;
+  border-radius: 8px 8px 0px 0px;
+}
+/**/
+.br-0 {
+  border-radius: 0px;
+}
+.card-header {
+  border-radius: 0px;
+}
+.modal-wide {
+  min-width: 70%;
+}
+.modal-p {
+  padding-left: 15%;
+  padding-right: 15%;
+}
+/*Brochure Area of Creative Page*/
+.brochure-h {
+  color: white;
+  background-color: deepskyblue;
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 0px;
+}
+/*About Page*/
+.location, .time, .description {
+  padding-left: 20px;
+}
+.location, .time, .company, .title {
+  margin-bottom: 0px;
+}
+.description {
+  margin-top: 15px;
+  padding-left: 25px;
+}
+.job {
+  margin-top: 30px;
+}
+.company {
+  font-style: italic;
+  padding-left: 5px;
+}
+.about-flex {
+  display: block;
+  width: 100%;
+}
+.about-col {
+  max-width: 60%;
+  padding: 5vw;
+}
+.contact-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background: linear-gradient(rgba(30, 144, 255, 0.75), rgba(30, 144, 255, 0.90)), url("images/contact-background.jpg");
+  background-size: cover;
+  color: white;
+  font-family: century Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+  letter-spacing: 1px;
+  padding: 0px;
+}
+.contact-col h2 {
+  margin: 0px;
+  font-weight: 300;
+  font-size: 2vw;
+}
+.contact-col a {
+  text-decoration: none;
+  color: white;
+  padding-left: 1em;
+  font-size: 1.5vw;
+}
+.linkedin-badge {
+  width: 8rem;
+}
+#skills, #schools {
+  margin-top: 30px;
+}
+.skill {
+  background-color: white;
+  color: dodgerblue;
+  width: auto;
+  margin: 5px;
+  margin-bottom: 15px;
+  padding: 7px;
+  font-size: 16px;
+  border-radius: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-weight: 600;
+}
+.skills-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 5px;
+}
+.resume-col {
+  background-color: white;
+  width: 100%;
+}
+.contact-topper {
+  height: 10vw;
+  width: 100%;
+  margin-bottom: 6vw;
+  background-image: url('images/profile-blue.png');
+  background-size: cover;
+  border-bottom: solid 7px white;
+}
+.profile-image {
+  width: 10vw;
+  border-radius: 50%;
+  border: solid 7px white;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5vw;
+  margin-bottom: 3vw;
+  position: absolute;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1.5vw;
+  margin-bottom: 25px;
+  padding-left: 5%;
+}
+#usi {
+  color: black;
+}
+#snhu {
+  color: black;
+}
+#team {
+  color: black;
+}
+/* Corrects Fixed Footer issue*/
+@media screen and (max-height: 825px) {
+  .fixed-bottom {
+    position: inherit;
+  }
+}
+/*Media Q specific to NestHubMax*/
+@media only screen and (min-device-width: 1280px) and (max-device-width: 1280px) and (-webkit-min-device-pixel-ratio: 1) {
+  .fixed-bottom {
+    position: fixed;
+  }
+}
+/* On screens that are 600px or more, ipad and larger*/
+@media screen and (min-width: 600px) {
+  .block-wrapper {
+    flex-direction: column;
+    max-width: 20vw;
+    background: linear-gradient(rgba(30, 144, 255, 0.75), rgba(30, 144, 255, 0.90)), url("images/left-menu-background.jpg");
+    background-size: cover;
+    justify-content: flex-start;
+  }
+  .block-wrapper div {
+    width: 20vw;
+    height: 20vw;
+  }
+  #about-block {
+    border-bottom: solid 3px white;
+  }
+  .introduction p {
+    font-size: 1.75rem;
+  }
+  #intro-header {
+    font-size: 3rem;
+  }
+  .home-flex {
+    display: flex;
+  }
+  footer {
+    margin-top: 0px;
+  }
+  #form {
+    max-width: 600px;
+  }
+  .passwordContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .about-flex {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    width: 100%;
+  }
+  .resume-col {
+    width: 80%;
+  }
+}
+/* On screens that are 600px or less, ipad and smaller*/
+@media screen and (max-width: 600px) {
+  .home-background {
+    background-image: linear-gradient(to left, transparent, dimgrey), url('images/Profile-e1565738842194.jpg');
+  }
+  .introduction p {
+    font-size: 1rem;
+  }
+  .long-content {
+    padding: 20px 20px 20px 20px;
+  }
+  .note {
+    padding: 10px 20px 0px 20px;
+    margin-bottom: 0px;
+  }
+  .note-lead {
+    margin-bottom: 0px;
+  }
+  .card-holder {
+    padding-top: 10px;
+  }
+  .card {
+    flex-basis: 100%;
+  }
+  .card-topper {
+    padding: 15px;
+  }
+  .card-topper > h2 {
+    font-size: 20px;
+  }
+  .card-topper > p {
+    font-size: 12px;
+  }
+  .content-image-medium, .content-image-small {
+    width: 100%;
+  }
+  .modal-p {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .btn-container {
+    width: 80%;
+  }
+}
+/* On screens that are 992px or less*/
+@media screen and (max-width: 992px) {
+  .about-col {
+    max-width: 95vw;
+  }
+  .profile-image {
+    width: 25%;
+  }
+  .info p, .info a {
+    font-size: 1.5rem;
+  }
+  .info h2 {
+    font-size: 2rem;
+  }
+  .contact-topper {
+    height: 25vw;
+  }
+}
+/*Small Mobile*/
+@media screen and (max-width:400px) {
+  .info a {
+    font-size: 1.3rem;
+  }
+}
+/*Media Q specific to iPad landscape*/
+@media only screen and (min-device-width: 768px) and (max-device-width: 769px) and (-webkit-min-device-pixel-ratio: 1) {
+  .fixed-bottom {
+    position: fixed;
+  }
+  .introduction p {
+    font-size: 1.2rem;
+  }
+  .block-wrapper {
+    max-width: 15%
+  }
+  .block-wrapper div {
+    width: 15vw;
+    height: 15vw;
+  }
+}
+@media screen and (min-width: 1160px) {
+  #about-block {
+    border-bottom: none;
+  }
+}
