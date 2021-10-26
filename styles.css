@@ -628,6 +628,9 @@ input:checked + .slider:before {
 }
 /* On screens that are 600px or more, ipad and larger*/
 @media screen and (min-width: 600px) {
+  .mobile-connect {
+    display: none;
+  }
   .block-wrapper {
     flex-direction: column;
     max-width: 20vw;
@@ -674,6 +677,9 @@ input:checked + .slider:before {
 }
 /* On screens that are 600px or less, ipad and smaller*/
 @media screen and (max-width: 600px) {
+  .tablet-connect {
+    display: none;
+  }
   .home-background {
     background-image: linear-gradient(to left, transparent, dimgrey), url('images/Profile-e1565738842194.jpg');
   }
